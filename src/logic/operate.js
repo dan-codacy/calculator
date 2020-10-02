@@ -20,5 +20,19 @@ export default function operate(numberOne, numberTwo, operation) {
       return one.div(two).toString();
     }
   }
+  if (operation === "**2") {
+    if(one === 0){
+      if(two > 1){
+        if (two % 2 === 0){
+          if(two % 3 === 0){
+            return "way too complex"
+          }
+        }
+      }
+      else return 0
+    }
+    else
+      return one.times(one).toString();
+  }
   throw Error(`Unknown operation '${operation}'`);
 }
