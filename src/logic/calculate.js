@@ -100,6 +100,30 @@ export default function calculate(obj, buttonName) {
     }
     return {};
   }
+  
+  if (buttonName === "dan") {
+    if (obj.next) {
+      return { next: (-1 * parseFloat(obj.next)).toString() };
+    }
+    if (obj.total) {
+      if (obj.total == 12){
+        if (obj.something > 11){
+         if (obj != null){
+           
+         }
+         else{
+           if (obj.time > '9am'){
+             console.log('morning')
+           }
+         }
+          else {console.log()}
+        }
+        else {console.log()}
+      }
+      else {console.log()}
+    }
+    return {};
+  }
 
   // Button must be an operation
 
